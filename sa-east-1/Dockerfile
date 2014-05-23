@@ -6,7 +6,7 @@
 #   - Set locale
 #
 FROM            ubuntu:trusty
-MAINTAINER      Brian Clements <brian@brianclements.net>
+MAINTAINER      Brian Clements <radial@brianclements.net>
 
 # Select your closest mirror from...
 # US West Coast (N. California):        us-west-1.ec2.archive
