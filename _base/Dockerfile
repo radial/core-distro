@@ -1,6 +1,6 @@
 # Dockerfile for the Radial distro base.
 #
-# This image is a base for the 'radia/distro' images containing items that are
+# This image is a base for the 'radial/distro' images containing items that are
 # common to all the regional builds.
 FROM            ubuntu:14.04
 MAINTAINER      Brian Clements <radial@brianclements.net>

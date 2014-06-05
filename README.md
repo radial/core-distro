@@ -1,7 +1,7 @@
 ## Dockerfiles for Core-Distro
 
 These regional Dockerfiles are built off of the
-'[radial/distro:base](/_base/README.md)' image that includes:
+'[radial/distro:base](/_base)' image that includes:
 
 * The official Ubuntu LTS image
 * Multiverse repository enabled
