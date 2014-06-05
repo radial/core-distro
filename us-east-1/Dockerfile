@@ -1,11 +1,11 @@
 # Dockerfile for the Radial core-distro.
 # Features:
 #   - Ubuntu 14.04 LTS
+#   - Bash colors
+#   - Set locale
 #   - Closest apt mirror selection.
 #   - Set timezone
-#   - Set locale
-#
-FROM            ubuntu:trusty
+FROM            radial/distro:base
 MAINTAINER      Brian Clements <radial@brianclements.net>
 
 # Select your closest mirror from...
@@ -31,13 +31,5 @@ RUN             echo $TIMEZONE > /etc/timezone &&\
                 cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime &&\
                 dpkg-reconfigure tzdata
 RUN             env --unset=DEBIAN_FRONTEND
-
-# Set locale
-# Note: preseeding debconf is 'better', but didn't want to install
-# 'debconf-utils' just to do this in more steps.
-RUN             locale-gen en_US.UTF-8
-ENV             LANG en_US.UTF-8  
-ENV             LANGUAGE en_US:en  
-ENV             LC_ALL en_US.UTF-8  
 
 CMD             ["/bin/bash"]
