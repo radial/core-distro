@@ -1,7 +1,7 @@
 ## Dockerfiles for Core-Distro
 
 These regional Dockerfiles are built off of the
-'[radial/distro:base](/_base)' image that includes:
+'[radial/distro-base](https://github.com/radial/core-distro-base)' image that includes:
 
 * The official Ubuntu LTS image
 * Multiverse repository enabled
@@ -28,7 +28,7 @@ very same data center.
 
 Each Dockerfile also sets the appropriate timezone data for each data center
 region selection. The 'en_US.UTF-8' locale and American English language
-have already been set in the 'distro:base' for all images regardless of region.
+have already been set by default for all images regardless of region.
 
 The idea is to optimize the mirrors and timezones for all the regions, but unify
 them all by language. This is because you speak just one language to your

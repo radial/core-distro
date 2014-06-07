@@ -5,7 +5,7 @@
 #   - Set locale
 #   - Closest apt mirror selection.
 #   - Set timezone
-FROM            radial/distro:base
+FROM            radial/distro-base:en_US
 MAINTAINER      Brian Clements <radial@brianclements.net>
 
 # Select your closest mirror from...
