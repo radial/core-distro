@@ -30,6 +30,5 @@ ENV             TIMEZONE Brazil/East
 RUN             echo $TIMEZONE > /etc/timezone &&\
                 cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime &&\
                 dpkg-reconfigure tzdata
-RUN             env --unset=DEBIAN_FRONTEND
 
 CMD             ["/bin/bash"]
